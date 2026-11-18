@@ -23,7 +23,11 @@ Put services in groups, like Websites or APIs, to keep the status page tidy. Cha
 
 ## Uptime bars
 
-The status page shows a bar per day for the last 60 days. A day with an incident, maintenance or downtime gets its own colour and icon; a critical incident counts as downtime. Hover a day to see what happened, or click it to open the incident or maintenance. How long check results are kept is set with `METRICS_RETENTION_DAYS` or under **Settings → Monitoring**.
+The status page shows a bar per day for the last 60 days. A day with an incident, maintenance or downtime gets its own colour and icon; a critical incident counts as downtime. Hover a day to see what happened and that day's average response time, or click it to open the incident or maintenance.
+
+Next to each service's status you see the response time of its last check. Response times only count checks that were up.
+
+How long check results are kept is set with `METRICS_RETENTION_DAYS` or under **Settings → Monitoring**.
 
 ::: tip Checked from the backend
 Checks run from inside the backend container. A service that works in your browser but shows as down is often blocked by a firewall, see [Troubleshooting](/reference/troubleshooting).
