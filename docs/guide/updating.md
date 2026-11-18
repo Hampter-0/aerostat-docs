@@ -1,13 +1,16 @@
 # Updating
 
 ```bash
-docker compose pull
-docker compose --profile postgres up -d
+docker compose pull && docker compose up -d
 ```
 
-Leave out `--profile postgres` if you use your own database. Database migrations run on start, and AeroStat makes a [backup](/features/backups) before it changes the database.
+This is also what **Copy update command** in the panel gives you. Database migrations run on start, and AeroStat makes a [backup](/features/backups) before it changes the database.
 
 What changed in each version is in the [releases](https://github.com/Hampter-0/AeroStat/releases).
+
+::: tip Installed before 0.27.2?
+Add `COMPOSE_PROFILES=postgres` to your `.env` when you use the Postgres that comes with AeroStat. Without it, `docker compose pull` skips the Postgres image, so it never gets updates. With your own Postgres you don't need it.
+:::
 
 ## Pin a version
 

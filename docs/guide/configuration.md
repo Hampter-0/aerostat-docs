@@ -19,6 +19,7 @@ Site name, contact link, colour, logo, favicon, timezone and data retention can 
 
 | Variable | Default | |
 | --- | --- | --- |
+| `COMPOSE_PROFILES` | `postgres` | Starts the Postgres that comes with AeroStat. Empty when you use your own |
 | `DATABASE_URL` | | Required. Postgres connection string |
 | `DB_USER`, `DB_PASSWORD`, `DB_NAME` | `aerostat`, `change_me`, `aerostat` | The Postgres that comes with AeroStat only |
 | `METRICS_RETENTION_DAYS` | `60` | Days of check results to keep |

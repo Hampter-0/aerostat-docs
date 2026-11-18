@@ -43,10 +43,10 @@ Keep a copy of `.env` next to your [backups](/features/backups). Without the sam
 
 ## 3. Start it
 
-Start AeroStat with the Postgres that comes with it. Docker downloads the images the first time:
+Docker downloads the images the first time. `COMPOSE_PROFILES=postgres` in `.env` makes it start the Postgres that comes with AeroStat too:
 
 ```bash
-docker compose --profile postgres up -d
+docker compose up -d
 ```
 
 ## 4. Create your admin account
@@ -65,7 +65,7 @@ Next, put it [behind a reverse proxy](/guide/reverse-proxy) for HTTPS.
 
 ## Using your own Postgres
 
-Already running Postgres? Leave out `--profile postgres` and point `DATABASE_URL` at your own database. AeroStat creates its tables on first start, but the database and user must exist. With `psql` as a superuser:
+Already running Postgres? Empty `COMPOSE_PROFILES=` in `.env`, so the bundled Postgres doesn't start, and point `DATABASE_URL` at your own database. AeroStat creates its tables on first start, but the database and user must exist. With `psql` as a superuser:
 
 ```sql
 CREATE USER aerostat WITH PASSWORD 'a-long-random-password';
