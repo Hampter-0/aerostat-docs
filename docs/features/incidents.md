@@ -44,6 +44,6 @@ Cancelled maintenance can be brought back.
 
 ## Notifications
 
-Posting, updating and resolving incidents, and maintenance that is planned, starts, ends or is cancelled, can go to [Discord, email and the bell](/features/notifications). Link previews of an incident or maintenance page show its live status when you share it.
+Posting, updating and resolving incidents, and maintenance that is planned, starts, ends or is cancelled, can go to [Discord, email and the panel notifications](/features/notifications). Link previews of an incident or maintenance page show its live status when you share it.
 
 Who can post, edit or delete incidents and maintenance is set with [roles](/features/users).

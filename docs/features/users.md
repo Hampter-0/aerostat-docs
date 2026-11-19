@@ -42,7 +42,7 @@ Most permissions need their view permission, which is ticked along. Nobody can g
 Tick **Suspended** on a user's page to stop them without deleting the account:
 
 - They are signed out right away and can't sign in.
-- They get no email or bell notifications.
+- They get no email or panel notifications.
 - Their activity and settings stay, so turning it off again puts everything back.
 
 Nobody can suspend themselves or the owner, and only the owner can suspend an admin. Locked out of every admin account? `unsuspend` in the [command line](/reference/cli) works from the server.

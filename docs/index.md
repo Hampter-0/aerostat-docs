@@ -28,7 +28,7 @@ features:
     details: Post incidents with their real start and end time, and plan maintenance ahead.
     link: /features/incidents
   - title: Notifications
-    details: Discord, email and a bell in the panel when a service goes down or comes back.
+    details: Discord, email and a notification in the panel when a service goes down or comes back.
     link: /features/notifications
   - title: Users and roles
     details: Admins with full access, roles with fine-grained permissions, and suspended accounts.

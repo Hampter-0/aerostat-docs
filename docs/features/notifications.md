@@ -1,6 +1,6 @@
 # Notifications
 
-AeroStat can tell you when something happens on Discord, by email and in a bell in the panel.
+AeroStat can tell you when something happens on Discord, by email and trough notifications in the panel.
 
 ## Discord
 
@@ -30,7 +30,7 @@ Restart with `docker compose up -d`. People with the Email settings permission s
 
 Each user then picks their notifications on their **Profile**, and only gets the ones their roles let them see: services, incidents or maintenance. Everyone gets their own email, so addresses are never shared. Suspended users get nothing.
 
-## The bell
+## Panel notifications
 
 The bell at the bottom right of the panel collects everything that happened while you were away: services going down or coming back, incidents, maintenance, certificates that run out and admin notices. It needs no setup.
 
