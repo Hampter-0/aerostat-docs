@@ -95,5 +95,25 @@
 }
 
 .vp-doc table {
+    border: 1px solid var(--vp-c-divider);
+    border-collapse: separate;
+    border-spacing: 0;
     border-radius: 12px;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.vp-doc th,
+.vp-doc td {
+    border: 0;
+    border-right: 1px solid var(--vp-c-divider);
+    border-bottom: 1px solid var(--vp-c-divider);
+}
+
+.vp-doc tr > :last-child {
+    border-right: 0;
+}
+
+.vp-doc tbody tr:last-child > * {
+    border-bottom: 0;
 }
