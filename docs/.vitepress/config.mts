@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   lang: 'en',
   title: 'AeroStat',
-  titleTemplate: ':title · AeroStat docs',
+  titleTemplate: ':title, AeroStat docs',
   description: 'Install, configure and run AeroStat, the self-hosted status page with uptime monitoring, incidents and maintenance.',
   cleanUrls: true,
   appearance: 'force-dark',
