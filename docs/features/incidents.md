@@ -6,6 +6,10 @@ Tell visitors what is going on. Incidents are for things that go wrong, maintena
 
 Post one under **Incidents → New incident**: a title, the affected services, a severity and a first update.
 
+When you pick the affected services you can tick a whole group, or **Select all**. The status page then shows the group name, or **All** when every service is affected, instead of a long list.
+
+The colour follows the severity everywhere, on the status page, in the panel, on Discord and in emails: minor is yellow, major orange and only critical red. Resolved is green.
+
 | Severity | Meaning |
 | --- | --- |
 | Minor | Something small, most people won't notice |
@@ -32,6 +36,8 @@ An incident keeps the time it really started and ended, not the time you typed i
 ## Maintenance
 
 Plan maintenance under **Maintenance → Schedule maintenance** with a start, an end and the affected services. Visitors see it coming on the status page.
+
+Planned maintenance is yellow, maintenance in progress blue. A service that is down while its maintenance is in progress shows **Maintenance** in blue instead of red, both live and in its uptime bar.
 
 | Status | Meaning |
 | --- | --- |

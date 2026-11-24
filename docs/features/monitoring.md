@@ -23,7 +23,7 @@ Put services in groups, like Websites or APIs, to keep the status page tidy. Cha
 
 ## Uptime bars
 
-The status page shows a bar per day for the last 60 days. A day with an incident, maintenance or downtime gets its own colour and icon; a critical incident counts as downtime. Hover a day to see what happened and that day's average response time, or click it to open the incident or maintenance.
+The status page shows a bar per day for the last 60 days. A day with an incident, maintenance or downtime gets its own colour and icon; a critical incident counts as downtime. Downtime during maintenance shows as maintenance, in blue. Hover a day to see what happened and that day's average response time, or click it to open the incident or maintenance.
 
 Next to each service's status you see the response time of its last check. Response times only count checks that were up.
 

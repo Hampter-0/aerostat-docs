@@ -1,6 +1,6 @@
 # Notifications
 
-AeroStat can tell you when something happens on Discord, by email and trough notifications in the panel.
+AeroStat can tell you when something happens on Discord, by email and through notifications in the panel.
 
 ## Discord
 
@@ -32,12 +32,11 @@ Each user then picks their notifications on their **Profile**, and only gets the
 
 ## Panel notifications
 
-The bell at the bottom right of the panel collects everything that happened while you were away: services going down or coming back, incidents, maintenance, certificates that run out and admin notices. It needs no setup.
+While you use the panel, new notifications pop up at the bottom right: services going down or coming back, incidents, maintenance, certificates that run out and admin notices. It needs no setup.
 
-- **All**, **Unread** and **Important** tabs. Outages, critical incidents and security notices count as important and turn the badge red.
-- Click a notification to open the page it is about. Mark them all as read, remove one, or clear the list.
-- **Mute the count** for 1, 8 or 24 hours. Notifications are still saved, the badge just stays quiet.
+- Click a notification to open the page it is about. It closes on its own after a few seconds.
+- Notifications that came in while you were away show up when you open the panel: the newest three, and a note with how many more there were.
 - Pick what shows up under **Profile → Notifications**, in the Panel column next to Email. You only get what your roles let you see, and never a notification about something you did yourself.
-- Don't want it at all? Turn off **Show the notification bell** on your profile. The bell disappears and nothing is saved for you; email keeps working.
+- Don't want them at all? Turn off **Show notifications in the panel** on your profile. Nothing is saved for you then; email keeps working.
 
-Notifications are removed automatically after 30 days, read or not.
+Notifications are removed automatically after 30 days.

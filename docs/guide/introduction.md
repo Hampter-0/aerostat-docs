@@ -11,7 +11,7 @@ It runs on your own server with Docker: a Rust backend, a Next.js frontend, Post
 - A public status page with daily uptime bars for the last 60 days, incidents and maintenance
 - [Checks](/features/monitoring) over HTTP(S) with status codes and keywords, TCP ports and DNS records, plus a warning before an HTTPS certificate runs out
 - [Incidents and maintenance](/features/incidents) with their real start and end time
-- [Notifications](/features/notifications) on Discord, by email and trough notifications in the panel
+- [Notifications](/features/notifications) on Discord, by email and through notifications in the panel
 - [Users, roles and admins](/features/users) with fine-grained permissions and an activity log
 - [Passkeys, two-factor sign-in](/features/sign-in) and security emails
 - [Backups](/features/backups) every day and before every update, with restore from the panel

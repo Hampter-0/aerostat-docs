@@ -52,6 +52,7 @@
 
 .VPNavBar {
     border-bottom: 1px solid var(--vp-c-divider);
+    background-color: var(--vp-nav-bg-color) !important;
 }
 
 .VPNavBar.has-sidebar .content-body,
