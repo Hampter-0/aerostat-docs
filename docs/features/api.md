@@ -1,6 +1,6 @@
 # Status API and badges
 
-Every AeroStat site has a small public API, so other sites and tools can show your status. Both endpoints allow cross-origin requests and are cached for a short time.
+Every AeroStat site has a small public API, so other sites and tools can show your status. All endpoints allow cross-origin requests and are cached for a short time.
 
 ## All services
 
@@ -45,6 +45,20 @@ const res = await fetch('https://status.example.com/api/status?service=contact-a
 const service = await res.json()
 if (service.status === 'offline') {
   // show "the contact form is temporarily unavailable"
+}
+```
+
+## Response times
+
+`GET /api/response-times?range=day` returns the average response time per time slot, the same data as the graph on the status page. `range` is `day` (5 minute slots), `week` (30 minutes) or `month` (2 hours); add `&service=<id>` for one service.
+
+```json
+{
+  "range": "day",
+  "bucket_seconds": 300,
+  "from": "2026-11-23T16:40:00Z",
+  "to": "2026-11-24T16:40:00Z",
+  "points": [{ "t": "2026-11-23T16:45:00Z", "ms": 142 }]
 }
 ```
 

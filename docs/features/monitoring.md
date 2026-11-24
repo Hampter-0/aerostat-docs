@@ -27,6 +27,10 @@ The status page shows a bar per day for the last 60 days. A day with an incident
 
 Next to each service's status you see the response time of its last check. Response times only count checks that were up.
 
+## Response time graph
+
+Under Live Status the status page shows the average response time of all services, or of one service picked from the list, for the last day, week or month. Hover or tap the line to see the time and the value. Only checks that were up count, and a period with too few checks says so instead of drawing a line.
+
 How long check results are kept is set with `METRICS_RETENTION_DAYS` or under **Settings → Monitoring**.
 
 ::: tip Checked from the backend

@@ -8,7 +8,7 @@ Post one under **Incidents → New incident**: a title, the affected services, a
 
 When you pick the affected services you can tick a whole group, or **Select all**. The status page then shows the group name, or **All** when every service is affected, instead of a long list.
 
-The colour follows the severity everywhere, on the status page, in the panel, on Discord and in emails: minor is yellow, major orange and only critical red. Resolved is green.
+The colour follows the severity everywhere, on the status page, in the panel, on Discord and in emails: minor and major are yellow, only critical is red. Resolved is green.
 
 | Severity | Meaning |
 | --- | --- |
@@ -24,6 +24,10 @@ Each update has a status, which moves the incident along:
 | Identified | We know the cause |
 | Monitoring | A fix is out, we are watching |
 | Resolved | Everything is back to normal |
+
+### Past incidents
+
+The status page lists the incidents of the last 7 days under **Past incidents**, one day at a time, with "No incidents reported" on quiet days. Older incidents are under **Incidents**.
 
 ### Real start and end times
 
