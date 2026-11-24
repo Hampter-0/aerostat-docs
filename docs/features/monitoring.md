@@ -30,7 +30,7 @@ A Docker check asks Docker whether a container runs. AeroStat only reads; it nev
 docker compose --profile docker up -d
 ```
 
-Then add a service with the type **Docker container**: pick **This server** and choose the container from the list. A container with a health check counts as down while it is unhealthy.
+Then add a service with the type **Docker container**: pick **This server** and choose the container from the list. A container with a health check counts as down while it is unhealthy. While it is still starting, AeroStat waits: no result is saved and no message is sent until Docker calls it healthy or unhealthy.
 
 **Containers on other servers.** Run the same proxy on that server and make its port reachable only for AeroStat, for example over a private network or VPN:
 
