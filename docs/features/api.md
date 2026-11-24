@@ -11,14 +11,14 @@ Every AeroStat site has a small public API, so other sites and tools can show yo
   "status": "operational",
   "last_checked": "2026-11-15T16:40:12Z",
   "services": [
-    { "id": "website", "name": "Website", "group": "Websites", "status": "online", "last_checked": "2026-11-15T16:40:12Z" }
+    { "id": "website", "name": "Website", "group": "Websites", "status": "online", "slow": false, "last_checked": "2026-11-15T16:40:12Z" }
   ],
   "ongoing_incidents": [],
   "maintenance_in_progress": []
 }
 ```
 
-`status` is one of `operational`, `degraded` (an incident is ongoing), `outage` (a service is down), `maintenance` or `no_services`. A service is `online`, `offline` or `pending` (not checked yet). Each incident and maintenance lists the ids of the `services` it affects. Check URLs are never included.
+`status` is one of `operational`, `degraded` (an incident is ongoing), `outage` (a service is down), `maintenance` or `no_services`. A service is `online`, `offline` or `pending` (not checked yet). `slow` is true while it answers much slower than usual. Each incident and maintenance lists the ids of the `services` it affects. Check URLs are never included.
 
 ## One service
 
@@ -30,6 +30,7 @@ Every AeroStat site has a small public API, so other sites and tools can show yo
   "name": "Contact API",
   "group": "APIs",
   "status": "online",
+  "slow": false,
   "last_checked": "2026-11-15T16:40:12Z",
   "ongoing_incidents": [],
   "maintenance_in_progress": []

@@ -8,6 +8,7 @@ Under **Settings → Notifications**, paste a Discord webhook URL (in Discord: S
 
 - a service goes down (after two failed checks in a row) or comes back up, with how long it was down
 - the HTTPS certificate of a service runs out soon (off by default, since a Discord channel is often public)
+- services answer much slower than usual, and when they are back to normal (see [Monitoring](/features/monitoring#slower-than-usual))
 - an incident is posted, updated or resolved (not for a past incident you add afterwards)
 - maintenance is planned, starts, ends or is cancelled
 
@@ -32,7 +33,7 @@ Each user then picks their notifications on their **Profile**, and only gets the
 
 ## Panel notifications
 
-While you use the panel, new notifications pop up at the bottom right: services going down or coming back, incidents, maintenance, certificates that run out and admin notices. It needs no setup.
+While you use the panel, new notifications pop up at the bottom right: services going down or coming back, slow response times, incidents, maintenance, certificates that run out and admin notices. It needs no setup.
 
 - Click a notification to open the page it is about. It closes on its own after a few seconds.
 - Notifications that came in while you were away show up when you open the panel: the newest three, and a note with how many more there were.

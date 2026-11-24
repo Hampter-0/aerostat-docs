@@ -24,6 +24,10 @@ Checks run from inside the backend container. Test from the same network with:
 docker compose exec frontend wget -S -O /dev/null https://example.com
 ```
 
+## A ping check says the server is not allowed to send pings
+
+Ping uses an unprivileged ICMP socket. Docker allows that by default, but some hosts or older Docker versions don't. Use a TCP check on a port that is open instead, or allow ping for the container's group with the sysctl `net.ipv4.ping_group_range`.
+
 ## Locked out of the panel
 
 Everything below runs from the server with the [command line](/reference/cli):
