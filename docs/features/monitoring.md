@@ -68,9 +68,20 @@ Put services in groups, like Websites or APIs, to keep the status page tidy. Cha
 
 ## Slower than usual
 
-AeroStat warns when a service answers much slower than usual. Every few minutes it compares the average of the last checks with the usual response time of the past week, and calls a service slow when it is twice as slow (100% slower) and at least 100 ms more. Change the percentage, or turn it off, under **Settings → Monitoring**.
+AeroStat warns when a service answers much slower than usual. Every minute it looks at the last checks of each service:
 
-You get one message on Discord, by email and in the panel, and the status page shows a notice. Services that turn slow at the same moment share one message, named by their group or **All**. A second message follows when they are back to normal. Turn it on or off per person under **Profile → Notifications** (Response times rise).
+- A check is **slow** when it is much slower than the usual response time of the past week (100% slower and at least 100 ms more by default), or above the service's own limit when you set one.
+- A service **turns slow** when 3 of its last 5 checks were slow, so one hiccup stays quiet. It is back to normal when fewer than 3 are slow. Want a warning for every slow check? Set it to 1 of the last 1.
+
+Change the percentage and the "3 of the last 5" under **Settings → Monitoring**. Per service you can set **Slow above (ms)** for a fixed limit, or turn **Warn when it answers slowly** off for a service whose speed always varies.
+
+You get one message on Discord, by email and in the panel, the status page shows a notice, and the service shows **Slower than usual** in yellow. Services that turn slow at the same moment share one message, named by their group or **All**. A second message follows when they are back to normal. Pick per person where you get it under **Profile → Notifications** (Response times rise), and see how it looks with **Send test** under **Settings → Notifications**.
+
+## Check log
+
+Every service page in the panel lists its latest checks. A failed check shows why, and **Details** shows what came back: the status line, useful headers and the start of the page, or the technical error. Details are kept for a week and only shown in the panel.
+
+**Test now** runs the check right away and shows the whole result, without saving it or sending a notification. Handy while you set up a check.
 
 ## Uptime bars
 

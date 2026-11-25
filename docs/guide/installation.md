@@ -43,7 +43,7 @@ Keep a copy of `.env` next to your [backups](/features/backups). Without the sam
 
 ## 3. Start it
 
-Docker downloads the images the first time. `COMPOSE_PROFILES=postgres` in `.env` makes it start the Postgres that comes with AeroStat too:
+Docker downloads the images the first time. `COMPOSE_PROFILES=postgres` in `.env` makes it start the Postgres that comes with AeroStat too. Want to check Docker containers? Make it `COMPOSE_PROFILES=postgres,docker` to also start the read-only Docker proxy (see [Docker containers](/features/monitoring#docker-containers)):
 
 ```bash
 docker compose up -d

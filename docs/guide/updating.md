@@ -8,6 +8,10 @@ This is also what **Copy update command** in the panel gives you. Database migra
 
 What changed in each version is in the [releases](https://github.com/Hampter-0/AeroStat/releases).
 
+::: tip Docker container checks
+Using the Docker proxy? Put `docker` in `COMPOSE_PROFILES` in your `.env`, like `COMPOSE_PROFILES=postgres,docker`. Then `docker compose pull && docker compose up -d` updates the proxy too. It needs the `docker-compose.yml` from 0.31.0 or newer.
+:::
+
 ::: tip Installed before 0.27.2?
 Add `COMPOSE_PROFILES=postgres` to your `.env` when you use the Postgres that comes with AeroStat. Without it, `docker compose pull` skips the Postgres image, so it never gets updates. With your own Postgres you don't need it.
 :::

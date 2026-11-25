@@ -24,6 +24,16 @@ Checks run from inside the backend container. Test from the same network with:
 docker compose exec frontend wget -S -O /dev/null https://example.com
 ```
 
+## A database on the same server shows as down
+
+Checks run from inside the backend container, where `localhost` is the container itself, not your server. For MySQL, MariaDB, Postgres or Redis installed directly on the server (not in Docker):
+
+- Use `host.docker.internal` as the host, like `host.docker.internal:3306`, or the server's own IP address.
+- Make the database listen on more than `127.0.0.1`: `bind-address = 0.0.0.0` for MySQL and MariaDB, `listen_addresses = '*'` for Postgres, `bind 0.0.0.0` for Redis. Keep the port closed in your firewall for the outside world.
+- No password or user is needed. An answer like "host is not allowed to connect" still counts as up, because the database answered.
+
+A database in another Docker container is easier: check the container with a Docker check, or put both in the same Docker network and use the container name as the host.
+
 ## A ping check says the server is not allowed to send pings
 
 Ping uses an unprivileged ICMP socket. Docker allows that by default, but some hosts or older Docker versions don't. Use a TCP check on a port that is open instead, or allow ping for the container's group with the sysctl `net.ipv4.ping_group_range`.
